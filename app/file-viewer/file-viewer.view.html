@@ -1,0 +1,36 @@
+<div ng-cloak ng-controller="FileViewerController as fileViewer">
+  <md-toolbar class="md-theme-indigo">
+    <h1 class="md-toolbar-tools"><i class="fa fa-barcode"></i>&nbsp;Leitor de Cnab</h1>
+  </md-toolbar>
+
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <md-card flex-xs flex-gt-xs="100" layout="column" class="readonly-card">
+      <div layout-padding layout-gt-sm="row">
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Nome do arquivo</label>
+          <input value="teste" readonly>
+        </md-input-container>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Data de Criação</label>
+          <input value="teste" readonly>
+        </md-input-container>
+      </div>
+    </md-card>
+  </md-content>
+
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <div flex-xs flex-gt-xs="50" layout="column" ng-repeat="coluna in fileViewer.coluna_boletos">
+      <md-card ng-repeat="boleto in coluna">
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-headline">Nº {{ boleto.nosso_numero }}</span>
+            <span class="md-subhead">{{ boleto.tipo }}</span>
+          </md-card-title-text>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+          <md-button>Mais Informações</md-button>
+        </md-card-actions>
+      </md-card>
+    </div>
+  </md-content>
+</div>
