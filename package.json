@@ -2,6 +2,7 @@
   "jspm": {
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.9",
+      "angular-bootstrap": "github:angular-ui/bootstrap-bower@^1.1.1",
       "angular-ui-router": "github:angular-ui/ui-router@^0.2.15"
     },
     "devDependencies": {

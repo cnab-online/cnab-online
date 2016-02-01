@@ -15,17 +15,12 @@ System.config({
 
   map: {
     "angular": "github:angular/bower-angular@1.4.9",
+    "angular-bootstrap": "github:angular-ui/bootstrap-bower@1.1.1",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
     "github:angular-ui/ui-router@0.2.15": {
-      "angular": "github:angular/bower-angular@1.4.9"
-    },
-    "github:angular/bower-angular-animate@1.4.9": {
-      "angular": "github:angular/bower-angular@1.4.9"
-    },
-    "github:angular/bower-angular-aria@1.4.9": {
       "angular": "github:angular/bower-angular@1.4.9"
     },
     "github:jspm/nodelibs-assert@0.1.0": {

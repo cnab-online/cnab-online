@@ -1,36 +1,97 @@
-<div ng-cloak ng-controller="FileViewerController as fileViewer">
-  <md-toolbar class="md-theme-indigo">
-    <h1 class="md-toolbar-tools"><i class="fa fa-barcode"></i>&nbsp;Leitor de Cnab</h1>
-  </md-toolbar>
-
-  <md-content class="md-padding" layout-xs="column" layout="row">
-    <md-card flex-xs flex-gt-xs="100" layout="column" class="readonly-card">
-      <div layout-padding layout-gt-sm="row">
-        <md-input-container class="md-block" flex-gt-sm>
-          <label>Nome do arquivo</label>
-          <input value="teste" readonly>
-        </md-input-container>
-        <md-input-container class="md-block" flex-gt-sm>
-          <label>Data de Criação</label>
-          <input value="teste" readonly>
-        </md-input-container>
+<div ng-controller="FileViewerController as fileViewer">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="default">
+          Cnab Online
+        </a>
       </div>
-    </md-card>
-  </md-content>
-
-  <md-content class="md-padding" layout-xs="column" layout="row">
-    <div flex-xs flex-gt-xs="50" layout="column" ng-repeat="coluna in fileViewer.coluna_boletos">
-      <md-card ng-repeat="boleto in coluna">
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline">Nº {{ boleto.nosso_numero }}</span>
-            <span class="md-subhead">{{ boleto.tipo }}</span>
-          </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-          <md-button>Mais Informações</md-button>
-        </md-card-actions>
-      </md-card>
     </div>
-  </md-content>
+  </nav>
+
+  <header class="lavel-up-header lavel-up-header-bg-img" data-stellar-background-ratio="0.5">
+    <div class="lavel-up-color-overlay">
+      <div class="container">
+        <h3>Informações básicas</h3>
+        <div class="row form-group">
+          <div class="col-md-3 form-group">
+            <label>Nome do Arquivo</label><br />
+            <i class="fa fa-file"></i> AXDFFRER.RET
+          </div>
+
+          <div class="col-md-3 form-group">
+            <label>Banco</label><br />
+            <i class="fa fa-bank"></i> Itaú
+          </div>
+          <div class="col-md-3 form-group">
+            <label>Conta</label><br />
+            <i class="fa fa-credit-card"></i> 124124124-1
+          </div>
+          <div class="col-md-3 form-group">
+            <label>Data de Geração</label><br />
+            <i class="fa fa-calendar"></i> 22/01/2015
+          </div>
+
+          <div class="col-md-3 form-group">
+            <label>Empresa</label><br />
+            <i class="fa fa-building"></i> AUTO PEÇAS BOLETINS
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Ocorrências</h3>
+        </div>
+        <div class="col-md-9">
+          <div class="pull-right btn-group-options">
+            <a href="#" class="btn btn-default">
+              <i class="fa fa-file-excel-o"></i> Exportar para Excel
+            </a>
+
+            <a href="#" class="btn btn-default">
+              <i class="fa fa-eye"></i> Visualização Avançada
+            </a>
+          </div>
+        </div>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Tipo de Ocorrência</th>
+            <th>Nosso Número</th>
+            <th>Sacado</th>
+            <th>Vencimento</th>
+            <th>Valor Recebido</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in fileViewer.items">
+            <td>Entrada de Título</td>
+            <td>1234123412</td>
+            <td>José da Silva</td>
+            <td>10/10/2001</td>
+            <td>R$ 10,00</td>
+            <td>
+              <div class="pull-right">
+                <a ui-sref="file-viewer.item-viewer({fileId: '1', itemId: '2'})" class="btn btn-primary">
+                  Mais informações
+                </a>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div ui-view>
+  </div>
 </div>

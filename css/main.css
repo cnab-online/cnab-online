@@ -14,11 +14,15 @@ body {
 }
 h1,
 h2,
+.navbar-brand,
 h3 {
 	font-family: 'loveloblack';
 }
 .btn-default{
 	color: #666;
+}
+.btn-group-options {
+	margin-top: 16px;
 }
 .btn-default:hover {
 	border-color: #ccc;
