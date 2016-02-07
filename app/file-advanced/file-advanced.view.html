@@ -1,0 +1,45 @@
+
+<div class="container" ng-controller="FileAdvancedController as fileAdvanced">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Visualização Avançada</h3>
+    </div>
+    <div class="col-md-6">
+      <div class="pull-right btn-group-options">
+        <a ui-sref="file.file-viewer({fileId: 1})" class="btn btn-default">
+          <i class="fa fa-eye"></i> Visualização Normal
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row file-row">
+    <div class="col-md-12">
+      <h4>1ª Linha</h4>
+    </div>
+    <div class="col-md-12">
+      <pre class="file-line"><span class="file-field file-field-01">02</span><span class="file-field file-field-02">RETORNO</span>01COBRANCA       011100123450        Teste de Retorno              341BANCO ITAU S.A.22081301600BPI00112210613                                                                                                                                                                                                                                                                                   000001</pre>
+    </div>
+
+    <div class="col-md-2 file-field-label file-field-label-01">
+      <label>codigo_arquivo</label><br />
+      1
+    </div>
+    <div class="col-md-2 file-field-label file-field-label-02">
+      <label>tipo_arquivo</label><br />
+      RETORNO
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h4>2ª Linha</h4>
+    </div>
+    <div class="col-md-12">
+      <pre class="file-line"><span class="file-field file-field-01">02</span><span class="file-field file-field-02">RETORNO</span>01COBRANCA       011100123450        Teste de Retorno              341BANCO ITAU S.A.22081301600BPI00112210613                                                                                                                                                                                                                                                                                   000001</pre>
+    </div>
+    <div class="col-md-12">
+      <em>Não processada</em>
+    </div>
+  </div>
+</div>

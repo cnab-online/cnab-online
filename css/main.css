@@ -1,0 +1,282 @@
+/**
+ * Lavel-up | Responsive coming soon template
+ * By WPBean
+ */
+
+
+
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', sans-serif;
+	color: #666;
+	font-size: 14px;
+	line-height: 1.6;
+}
+h1,
+h2,
+.navbar-brand,
+h3 {
+	font-family: 'loveloblack';
+}
+.btn-default{
+	color: #666;
+}
+.btn-group-options {
+	margin-top: 16px;
+}
+.btn-default:hover {
+	border-color: #ccc;
+	color: #666;
+}
+a:focus,
+input[type="submit"]:focus,
+button:focus,
+a:active,
+input[type="submit"]:active,
+button:active{
+	outline: 0!important;
+	box-shadow: inherit!important;
+}
+
+/* ==========================================================================
+   Header style
+   ========================================================================== */
+
+.lavel-up-header{
+	color: #fff;
+}
+.lavel-up-header-bg-img{
+	background: url('../img/bg_bright_blue.jpg') no-repeat center top fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+ }
+.lavel-up-color-overlay{
+	background: rgba(0, 0, 0, 0.55);
+	padding-top: 70px;
+	background-image: url('../img/pattern.png');
+}
+@media (min-width: 991px) {
+	.lu-title{
+		font-size: 60px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 990px) {
+	.lu-title{
+		font-size: 40px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 500px) {
+	.lu-title{
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
+	.lu-new-feature h3{
+		font-size: 20px;
+	}
+}
+
+
+/* Countdown Style */
+
+.lu-countdown {
+
+}
+.lu-countdown .lu-square{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	padding: 30px 0;
+	border: 1px solid #fff;
+	background-color: rgba( 255,255,255,0.4 );
+}
+@media (max-width: 990px) {
+	.lu-countdown .lu-square{
+		margin-bottom: 30px;
+	}
+}
+.lu-countdown .lu-square span:first-child{
+	font-family: 'loveloblack';
+	font-size: 50px;
+	display: block;
+}
+.lu-countdown .lu-square span:last-child {
+	font-size: 15px;
+	text-transform: uppercase;
+}
+@media (max-width: 500px) {
+	.lu-countdown .lu-square{
+		width: 120px;
+		height: 120px;
+		padding: 25px 0;
+	}
+	.lu-countdown .lu-square span:first-child{
+		font-size: 36px;
+	}
+}
+
+/* Newsletter style */
+
+.lu-newletter{
+	padding-bottom:4em;
+}
+
+@media (min-width: 991px) {
+	.lu-newletter{
+		margin-top: 85px;
+	}
+	.lu-newletter h2 {
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+}
+@media (max-width: 990px) {
+	.lu-newletter{
+		margin-top: 45px;
+	}
+	.lu-newletter h2 {
+		margin-bottom: 20px;
+		font-size: 22px;
+	}
+}
+.lu-newletter input[type="email"],
+.lu-newletter input[type="text"]{
+	border-radius: 0;
+	background-color: rgba( 255,255,255,0.9 );
+}
+
+.lu-newletter input[type="submit"],
+.lu-newletter button{
+	border-radius: 0!important;
+	font-family: 'loveloblack';
+	line-height: 30px!important;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.form-control:focus {
+  border-color: #ccc;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba( 255,255,255,0.2 ), 0 0 8px rgba( 255,255,255,0.4 );
+  box-shadow: inset 0 1px 1px rgba( 255,255,255,0.2 ), 0 0 8px rgba( 255,255,255,0.4 );
+}
+
+/* Social networks */
+
+.lu-social-networks{
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+.lu-social-networks a {
+	display: inline-block;
+	background: rgba(255,255,255,.55);
+	border: 1px solid #fff;
+	width: 55px;
+	height: 55px;
+	color: #fff;
+	margin: 0 2px;
+}
+@media (max-width: 990px) {
+	.lu-social-networks a {
+		margin-bottom: 8px;
+	}
+}
+.lu-social-networks a i{
+	font-size: 24px;
+	line-height: 55px;
+}
+
+
+/* ==========================================================================
+   What's new section
+   ========================================================================== */
+
+.lu-what-new{
+	padding: 75px 0;
+}
+.lu-section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+@media (min-width: 991px) {
+	.lu-section-title {
+	  font-size: 45px;
+	}
+}
+.lu-new-feature {
+  border: 2px solid #eee;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.lu-new-feature-icon i{
+	font-size: 40px;
+}
+
+
+/* ==========================================================================
+   Contact section
+   ========================================================================== */
+
+.lu-contact{
+	background: url('../img/contact-bg.png') no-repeat center top fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+}
+.lu-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  background-image: url('../img/pattern.png');
+  padding: 75px 0;
+}
+
+/* Contact form */
+.lu-contact-form input[type="text"], 
+.lu-contact-form input[type="email"], 
+.lu-contact-form textarea {
+  background: rgba( 255,255,255,0.9 );
+  border-radius: 0;
+}
+.lu-contact-form input[type="text"], 
+.lu-contact-form input[type="email"] {
+  padding: 10px 12px;
+  height: 46px;
+  font-size: 16px;
+}
+.lu-contact-form textarea {
+	min-height: 168px;
+}
+.lu-contact-form .btn {
+  border-radius: 0;
+  font-family: 'loveloblack';
+  padding: 11px 40px 8px 40px;
+  font-size: 18px;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.lu-footer {
+  padding: 25px 0;
+}
+
+.file-line .file-field:nth-child(even) {
+  text-decoration: underline;
+}
+
+.file-field, .file-field-label {
+  cursor: pointer;
+}
+
+.label-info {
+  /*
+  background-color: #337ab7;
+  color: #ffffff;
+  border-radius: 0.5em;
+  */
+  outline: 2px solid #337ab7;
+}
