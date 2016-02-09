@@ -176,7 +176,7 @@
                 },
                 "type": {
                     "type": "string",
-                    "description": "Sempre 'file' para seguir a especificação JSON API"
+                    "description": "Sempre 'files' para seguir a especificação JSON API"
                 },
                 "attributes": {
                     "properties": {
@@ -218,7 +218,7 @@
                 },
                 "type": {
                     "type": "string",
-                    "description": "Sempre 'occurrence' para seguir a especificação JSON API"
+                    "description": "Sempre 'occurrences' para seguir a especificação JSON API"
                 },
                 "attributes": {
                     "properties": {
@@ -335,7 +335,7 @@
                 },
                 "type": {
                     "type": "string",
-                    "description": "Sempre 'line' para seguir a especificação JSON API"
+                    "description": "Sempre 'lines' para seguir a especificação JSON API"
                 },
                 "attributes": {
                     "properties": {
@@ -374,16 +374,6 @@
                     "items": {
                         "type": "object",
                         "properties": {
-                            "code": {
-                                "type": "string",
-                                "description": "Pode ser: \"invalid_file\", \"invalid_format\", \"format_not_implemented\", \"file_not_found\"",
-                                "enum": [
-                                    "invalid_file",
-                                    "invalid_format",
-                                    "format_not_implemented",
-                                    "file_not_found"
-                                ]
-                            },
                             "title": {
                                 "type": "string"
                             },
