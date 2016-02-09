@@ -1,0 +1,35 @@
+database:
+  image: postgres
+  ports:
+    - "27017:27017"
+#  volumes:
+#    - ./datadir:/var/lib/postgresql/data
+  environment:
+    - POSTGRES_PASSWORD=localpassword
+    - POSTGRES_USER=localuser
+    - POSTGRES_DB=localdb
+    - PGDATA=/var/lib/postgresql/data/pgdata
+
+api:
+  build: ./api
+  ports:
+    - "9292:80"
+  volumes:
+    - ./api:/var/www/html
+  links:
+    - database
+  environment:
+    - API_ENVIRONMENT=development
+    - DATABASE_HOST=database
+    - DATABASE_USER=localuser
+    - DATABASE_PASSWORD=localpassword
+    - DATABASE_NAME=localdb
+
+web:
+  image: nginx
+  ports:
+    - "80:80"
+  volumes:
+    - ./client:/usr/share/nginx/html
+  command: nginx -g "daemon off;"
+
