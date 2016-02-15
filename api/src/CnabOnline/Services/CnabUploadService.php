@@ -27,7 +27,7 @@ class CnabUploadService
 
         if(!in_array($extension, $allowedExtensions)) {
             throw new BadRequestHttpException(
-                "Invalid extension '$extension', accept only '".implode("', '", $allowedExtensions)."'"
+                "Extensão inválida '$extension', utilize apenas '".implode("', '", $allowedExtensions)."'"
             );
         }
 

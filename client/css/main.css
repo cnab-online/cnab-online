@@ -4,6 +4,22 @@
  */
 
 
+.upload-progress, .progress-bar {
+    height: 46px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.alert-validation {
+    margin-top: 1em;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.wrap-all {
+    word-wrap: break-word;
+    word-break: break-all;
+}
 
 body {
 	-webkit-font-smoothing: antialiased;

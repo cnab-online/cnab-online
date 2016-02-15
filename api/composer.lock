@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "16cdea1852fec581867c7dab67adfe2a",
-    "content-hash": "1eeb1ca1ce3283fccaaed1fc3ddf7a61",
+    "hash": "e7a462d456966cd711c6b68ecab6aad7",
+    "content-hash": "80004833e75123ab958ec527b679a49b",
     "packages": [
         {
             "name": "43081j/php-negotiator",
@@ -891,6 +891,56 @@
                 "silex"
             ],
             "time": "2014-07-06 10:59:11"
+        },
+        {
+            "name": "jdesrosiers/silex-cors-provider",
+            "version": "v0.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jdesrosiers/silex-cors-provider.git",
+                "reference": "06954050d4a031884c4a68a8c3efb7ec7910ebde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jdesrosiers/silex-cors-provider/zipball/06954050d4a031884c4a68a8c3efb7ec7910ebde",
+                "reference": "06954050d4a031884c4a68a8c3efb7ec7910ebde",
+                "shasum": ""
+            },
+            "require": {
+                "silex/silex": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "symfony/browser-kit": "2.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JDesrosiers\\Silex\\Provider\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jason Desrosiers",
+                    "email": "jdesrosi@gmail.com"
+                }
+            ],
+            "description": "A silex service provider that adds CORS services to silex",
+            "keywords": [
+                "cors",
+                "cross",
+                "origin",
+                "provider",
+                "resource",
+                "service",
+                "sharing",
+                "silex"
+            ],
+            "time": "2015-09-12 22:16:14"
         },
         {
             "name": "league/fractal",

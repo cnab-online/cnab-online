@@ -1,0 +1,60 @@
+{
+  "name": "karma-jasmine",
+  "version": "0.3.7",
+  "description": "A Karma plugin - adapter for Jasmine testing framework.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/karma-runner/karma-jasmine.git"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-adapter",
+    "jasmine"
+  ],
+  "author": "Vojta Jina <vojta.jina@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6",
+    "karma": "",
+    "karma-jasmine": "~0.3.0",
+    "karma-chrome-launcher": "~0.2.0",
+    "karma-firefox-launcher": "~0.1.0",
+    "grunt-karma": "~0.12.0",
+    "grunt-auto-release": "~0.0.2",
+    "grunt-npm": "~0.0.2",
+    "grunt-bump": "~0.0.7",
+    "jasmine-core": "~2.3.4"
+  },
+  "peerDependencies": {
+    "jasmine-core": "*"
+  },
+  "license": "MIT",
+  "contributors": [
+    "Maksim Ryzhikov <rv.maksim@gmail.com>",
+    "olegskl <sklyanchuk@gmail.com>",
+    "Cornelius Schmale <github@cschmale.de>",
+    "Arthur Thornton <arthur@thestorefront.com>",
+    "Friedel Ziegelmayer <friedel.ziegelmayer@gmail.com>",
+    "Friedel Ziegelmayer <dignifiedquire@gmail.com>",
+    "Mark Ethan Trostler <mark@zzo.com>",
+    "Richard Park <objectiv@gmail.com>",
+    "dignifiedquire <dignifiedquire@gmail.com>",
+    "jiverson <jiverson222@gmail.com>",
+    "Aaron Hartwig <aaron.hartwig@whyhigh.com>",
+    "rpark <objectiv@gmail.com>",
+    "Alesei N <github.com@bzik.net>",
+    "Barry Fitzgerald <barfitzgerald@gmail.com>",
+    "Marek Vavrecan <vavrecan@gmail.com>",
+    "Matthew Hill <Matthew.Hill4@bskyb.com>",
+    "Niels Dequeker <niels.dequeker@gmail.com>",
+    "Robin Gloster <robin@loc-com.de>",
+    "Sahat Yalkabov <sakhat@gmail.com>",
+    "Sergey Tatarintsev <sevinf@yandex-team.ru>",
+    "Stefan Dragnev <dragnev@telerik.com>"
+  ]
+}

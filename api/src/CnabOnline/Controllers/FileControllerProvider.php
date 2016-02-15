@@ -31,14 +31,14 @@ class FileControllerProvider implements ControllerProviderInterface
         $cnabUploadService = new CnabUploadService;
 
         if(is_null($uploadedFile))
-            throw new BadRequestHttpException("File not sent");
+            throw new BadRequestHttpException("Arquivo não enviado");
 
         $file = $cnabUploadService->processUploadedFile($uploadedFile, $app);
 
         $app['orm.em']->persist($file);
         $app['orm.em']->flush();
 
-        $subRequest = Request::create('/file/'.$file->getUid(), 'GET');
+        $subRequest = Request::create('/v1/file/'.$file->getUid(), 'GET');
 
         return $app->handle($subRequest, HttpKernelInterface::SUB_REQUEST);
     }

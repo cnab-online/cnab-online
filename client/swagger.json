@@ -280,7 +280,7 @@
                         },
                         "due_date": {
                             "type": "string",
-                            "description": "Retorna o nosso número do boleto (sem o digito)"
+                            "description": "Retorna a data de vencimento de boleto"
                         },
                         "credit_date": {
                             "type": "string",
@@ -314,7 +314,7 @@
                             "type": "string",
                             "description": "Retorna a descrição do código de liquidação"
                         },
-                        "id_dda": {
+                        "is_dda": {
                             "type": "string",
                             "description": "Retorna de o boleto foi pago através do Débito Direto Autorizado"
                         },

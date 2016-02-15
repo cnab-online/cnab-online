@@ -11,7 +11,7 @@ class FileEndpointTest extends TestCase
     {
         $client = $this->createClient();
 
-        $client->request('GET', '/file');
+        $client->request('GET', '/v1/file');
 
         $this->assertEquals(
             405,
@@ -33,7 +33,7 @@ class FileEndpointTest extends TestCase
 
         $client->request(
             'POST',
-            '/file',
+            '/v1/file',
             array(),
             array('file' => $file)
         );
@@ -58,7 +58,7 @@ class FileEndpointTest extends TestCase
 
         $client->request(
             'POST',
-            '/file',
+            '/v1/file',
             array(),
             array('file' => $file)
         );
@@ -83,7 +83,7 @@ class FileEndpointTest extends TestCase
 
         $client->request(
             'POST',
-            '/file',
+            '/v1/file',
             array(),
             array('file' => $file)
         );
@@ -121,7 +121,7 @@ class FileEndpointTest extends TestCase
 
         $client = $this->createClient();
 
-        $client->request('GET', '/file/'.$fileUid);
+        $client->request('GET', '/v1/file/'.$fileUid);
 
         $this->assertFileResponse($client);
     }
@@ -132,7 +132,7 @@ class FileEndpointTest extends TestCase
 
         $client = $this->createClient();
 
-        $client->request('GET', '/file/'.$fileUid.'/occurrences');
+        $client->request('GET', '/v1/file/'.$fileUid.'/occurrences');
 
         $jsonResponse = json_decode($client->getResponse()->getContent());
 
@@ -149,7 +149,7 @@ class FileEndpointTest extends TestCase
 
         $client = $this->createClient();
 
-        $client->request('GET', '/file/'.$fileUid.'/lines');
+        $client->request('GET', '/v1/file/'.$fileUid.'/lines');
 
         $jsonResponse = json_decode($client->getResponse()->getContent());
 
