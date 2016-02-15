@@ -23,7 +23,7 @@ class LineTransformer extends Fractal\TransformerAbstract
 
         return [
             'id' => $line->pos,
-            'raw_text' => $occurrence->texto,
+            'raw_text' => $line->texto,
             'identified_fields' => $identifiedFields,
         ];
     }

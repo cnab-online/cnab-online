@@ -18,6 +18,10 @@ $app['converter.file'] = $app->share(function() use($app) {
     return new Converters\FileConverter($app);
 });
 
+$app->register(new JDesrosiers\Silex\Provider\CorsServiceProvider());
+
+$app->after($app["cors"]);
+
 $app['fractal'] = new Manager();
 $app['fractal']->setSerializer(new JsonApiSerializer());
 

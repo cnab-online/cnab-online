@@ -5,4 +5,4 @@
 
 use Silex\Application;
 
-$app->mount('/', new CnabOnline\Controllers\FileControllerProvider());
+$app->mount('/v1', new CnabOnline\Controllers\FileControllerProvider());

@@ -31,7 +31,7 @@ class FileConverter
         $files = $fileRepository->findByUid($fileUid);
 
         if(count($files) == 0)
-            throw new NotFoundHttpException("File not found");
+            throw new NotFoundHttpException("Arquivo não encontrado");
 
         $file = $files[0];
 
