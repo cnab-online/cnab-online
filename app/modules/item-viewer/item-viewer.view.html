@@ -1,0 +1,113 @@
+<div class="modal fade in" style="display:block;overflow:auto;" id="itemViewerModal" tabindex="-1" role="dialog" aria-labelledby="itemViewerModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a ui-sref="file.file-viewer({fileId: fileId})" type="button" class="close" aria-label="Close">
+        	<span aria-hidden="true">&times;</span>
+        </a>
+        <h4 class="modal-title" id="itemViewerModal">Ocorrência</h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <tr>
+            <th>Tipo de Ocorrência</th>
+            <td>{{ occurrenceAttributes.code }} - {{ occurrenceAttributes.code_name }}</td>
+          </tr>
+          <tr>
+            <th>Valor Recebido</th>
+            <td>{{ occurrenceAttributes.received_value }}</td>
+          </tr>
+          <tr>
+            <th>Valor do Título</th>
+            <td>{{ occurrenceAttributes.title_value }}</td>
+          </tr>
+          <tr>
+            <th>Valor Taxa Bancária</th>
+            <td>{{ occurrenceAttributes.bank_tax }}</td>
+          </tr>
+          <tr>
+            <th>Valor IOF</th>
+            <td>{{ occurrenceAttributes.iof_value }}</td>
+          </tr>
+          <tr>
+            <th>Valor Desconto</th>
+            <td>{{ occurrenceAttributes.discount_value }}</td>
+          </tr>
+          <tr>
+            <th>Valor Abatimento</th>
+            <td>{{ occurrenceAttributes.rebate_value }}</td>
+          </tr>
+          <tr>
+            <th>Valor Outros Créditos</th>
+            <td>{{ occurrenceAttributes.others_credits_value }}</td>
+          </tr>
+          <tr>
+            <th>Valor Mora/Multa</th>
+            <td>{{ occurrenceAttributes.mulct_value }}</td>
+          </tr>
+          <tr>
+            <th>Nº Documento</th>
+            <td>{{ occurrenceAttributes.document_number }}</td>
+          </tr>
+          <tr>
+            <th>Carteira</th>
+            <td>{{ occurrenceAttributes.wallet }}</td>
+          </tr>
+          <tr>
+            <th>Agência</th>
+            <td>{{ occurrenceAttributes.agency }}</td>
+          </tr>
+          <tr>
+            <th>Nosso Número</th>
+            <td>{{ occurrenceAttributes.our_number }}</td>
+          </tr>
+          <tr>
+            <th>Data de Vencimento</th>
+            <td>{{ occurrenceAttributes.due_date }}</td>
+          </tr>
+          <tr>
+            <th>Data de Crédito</th>
+            <td>{{ occurrenceAttributes.credit_date }}</td>
+          </tr>
+          <tr>
+            <th>Data de Ocorrência</th>
+            <td>{{ occurrenceAttributes.occurrence_date }}</td>
+          </tr>
+          <tr>
+            <th>Agência Cobradora</th>
+            <td>{{ occurrenceAttributes.charged_agency }}</td>
+          </tr>
+          <tr>
+            <th>Número Sequencial</th>
+            <td>{{ occurrenceAttributes.sequencial_number }}</td>
+          </tr>
+          <tr>
+            <th>É uma baixa?</th>
+            <td>{{ occurrenceAttributes.is_payment ? 'Sim' : 'Não' }}</td>
+          </tr>
+          <tr>
+            <th>É uma baixa rejeitada?</th>
+            <td>{{ occurrenceAttributes.is_rejected_payment ? 'Sim' : 'Não' }}</td>
+          </tr>
+          <tr>
+            <th>Código de Liquidação</th>
+            <td>{{ occurrenceAttributes.liquidation_code }}</td>
+          </tr>
+          <tr>
+            <th>Descrição Liquidação</th>
+            <td>{{ occurrenceAttributes.liquidation_description }}</td>
+          </tr>
+          <tr>
+            <th>Pago através do DDA</th>
+            <td>{{ occurrenceAttributes.is_dda ? 'Sim' : 'Não' }}</td>
+          </tr>
+          <tr>
+            <th>Alegação do Pagador</th>
+            <td>{{ occurrenceAttributes.payer_allegation }}</td>
+          </tr>
+         </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop fade in"></div>

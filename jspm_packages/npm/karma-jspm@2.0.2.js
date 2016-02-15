@@ -1,0 +1,1 @@
+module.exports = require("npm:karma-jspm@2.0.2/index.js");

@@ -1,0 +1,53 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <h3>Ocorrências</h3>
+    </div>
+    <div class="col-md-9">
+      <div class="pull-right btn-group-options">
+        <!--
+        <a href="#" class="btn btn-default">
+          <i class="fa fa-file-excel-o"></i> Exportar para Excel
+        </a>
+        -->
+
+        <a ui-sref="file.file-advanced({fileId: fileId})" class="btn btn-default">
+          <i class="fa fa-eye"></i> Visualização Avançada
+        </a>
+      </div>
+    </div>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Tipo de Ocorrência</th>
+        <th>Nosso Número</th>
+        <th>Vencimento</th>
+        <th>Valor do Título</th>
+        <th>Valor Recebido</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="occurrence in occurrences">
+        <td>{{ occurrence.attributes.code_name }}</td>
+        <td>{{ occurrence.attributes.our_number }}</td>
+        <td>{{ occurrence.attributes.due_date }}</td>
+        <td>{{ occurrence.attributes.title_value }}</td>
+        <td>{{ occurrence.attributes.received_value }}</td>
+        <td>
+          <div class="pull-right">
+            <a ui-sref="file.file-viewer.item-viewer({fileId: fileId, itemId: occurrence.id})" class="btn btn-primary">
+              Mais informações
+            </a>
+          </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+<div ui-view>
+</div>

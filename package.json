@@ -3,12 +3,18 @@
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.4.9",
       "angular-bootstrap": "github:angular-ui/bootstrap-bower@^1.1.1",
-      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15"
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "ng-file-upload": "github:danialfarid/ng-file-upload@^12.0.1"
     },
     "devDependencies": {
+      "angular-mocks": "npm:angular-mocks@^1.5.0",
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
-      "core-js": "npm:core-js@^1.1.4"
+      "core-js": "npm:core-js@^1.1.4",
+      "jasmine": "github:jasmine/jasmine@^2.4.1",
+      "karma-chrome-launcher": "npm:karma-chrome-launcher@^0.2.2",
+      "karma-jasmine": "npm:karma-jasmine@^0.3.7",
+      "karma-jspm": "npm:karma-jspm@^2.0.2"
     }
   }
 }

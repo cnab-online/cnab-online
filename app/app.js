@@ -1,49 +1,25 @@
 import angular from 'angular';
 import 'angular-ui-router';
-
-import DefaultController from 'app/default/default.controller.js';
-import FileController from 'app/file/file.controller.js';
-import FileViewerController from 'app/file-viewer/file-viewer.controller.js';
-import ItemViewerController from 'app/item-viewer/item-viewer.controller.js';
-import FileAdvancedController from 'app/file-advanced/file-advanced.controller.js';
+import 'app/modules/cnab-online-api/cnab-online-api.module.js';
+import 'app/modules/default/default.module.js';
+import 'app/modules/file/file.module.js';
+import 'app/modules/file-viewer/file-viewer.module.js';
+import 'app/modules/item-viewer/item-viewer.module.js';
+import 'app/modules/file-advanced/file-advanced.module.js';
 
 let app = angular.module('app', [
   'ui.router',
+  'default',
+  'file',
+  'fileAdvanced',
+  'fileViewer',
+  'itemViewer',
+  'cnabOnlineApi'
 ]);
 
-app.controller('DefaultController', DefaultController);
-app.controller('FileController', FileController);
-app.controller('FileViewerController', FileViewerController);
-app.controller('ItemViewerController', ItemViewerController);
-app.controller('FileAdvancedController', FileAdvancedController);
-
 app.config(($stateProvider, $urlRouterProvider)=>{
-  $urlRouterProvider.otherwise('/');
-  
-  $stateProvider
-    .state('default', {
-      url: '/',
-      templateUrl: 'app/default/default.view.html'
-    })
-    .state('file', {
-      url: '/file/:fileId',
-      templateUrl: 'app/file/file.view.html'
-    })
-    .state('file.file-viewer', {
-      url: '/file-viewer',
-      templateUrl: 'app/file-viewer/file-viewer.view.html'
-    })
-    .state('file.file-viewer.item-viewer', {
-      url: '/:itemId',
-      templateUrl: 'app/item-viewer/item-viewer.view.html'
-    })
-    .state('file.file-advanced', {
-      url: '/file-advanced',
-      templateUrl: 'app/file-advanced/file-advanced.view.html'
-    });
-
+  $urlRouterProvider.otherwise('/'); 
 });
-
 
 /*
  * As we are using ES6 with Angular 1.x we can't use ng-app directive
@@ -57,8 +33,10 @@ angular.element(document).ready(() => {
   if(location.origin.match(/localhost/)) {
     System.trace = true;
   }
-  angular.bootstrap(container, [app.name]), {
-    strictDi: true
+  if(container) {
+    angular.bootstrap(container, [app.name]), {
+      strictDi: true
+    }
   }
 });
 

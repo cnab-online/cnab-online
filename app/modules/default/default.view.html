@@ -1,0 +1,94 @@
+<header ng-controller="DefaultController as default" class="lavel-up-header lavel-up-header-bg-img" data-stellar-background-ratio="0.5">
+  <div class="lavel-up-color-overlay">
+    <div class="container text-center">
+
+      <!-- Main Title start -->
+      <h1 class="lu-title">Cnab Online</h1>
+      <!-- Main title end -->
+
+
+      <!-- Newsletter signup start -->
+      <div class="lu-newletter">
+        <h2>Selecione o arquivo que deseja visualizar.</h2>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <div class="progress upload-progress" ng-show="default.progressActive">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" ng-style="{'width': default.progressPercentage + '%'}">
+                  <span class="sr-only"></span>
+                </div>
+              </div>
+              <div id="mc_embed_signup" ng-hide="default.progressActive" class="lu_singup_form">
+                <form class="validate">
+                  <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group input-group input-group-lg">
+                      <span class="input-group-btn">
+                        <a ngf-select="default.uploadFile($file)" class="btn btn-default">
+                          Selecionar Arquivo
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div ng-repeat="error in default.errors" class="alert alert-validation alert-danger">
+                {{ error.detail }}
+              </div>
+              <!--End mc_embed_signup-->
+            </div>
+          </div>
+      </div>
+      <!-- Newsletter signup end -->
+
+      <!-- Social networks
+        <div class="lu-social-networks text-center">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-pinterest"></i></a>
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+      Social networks -->
+
+
+    </div><!--.col-md-12-->
+  </div><!--.row-->
+</header> 
+
+<!-- What's new coming section -->
+<section class="lu-what-new">
+  <div class="container text-center">
+      <h1 class="lu-section-title">Funcionalidades</h1>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="lu-new-feature">
+              <div class="lu-new-feature-icon">
+                <i class="fa fa-barcode"></i>
+              </div>
+              <h3>Saiba quais boletos foram pagos</h3>
+              <div class="lu-new-feature-text">Obtenha informações de todos os boletos que constam no arquivo especificado.</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="lu-new-feature">
+              <div class="lu-new-feature-icon">
+                <i class="fa fa-bank"></i>
+              </div>
+              <h3>Integre com o seu sistema</h3>
+              <div class="lu-new-feature-text">E possibilite a leitura de formatos de vários banco.</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="lu-new-feature">
+              <div class="lu-new-feature-icon">
+                <i class="fa fa-file-excel-o"></i>
+              </div>
+              <h3>Exporte para outro formato</h3>
+              <div class="lu-new-feature-text">Exporte o arquivo para diversos outros formatos.</div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- What's new coming section end -->

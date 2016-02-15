@@ -1,0 +1,1 @@
+module.exports = require("npm:karma-chrome-launcher@0.2.2/index.js");
