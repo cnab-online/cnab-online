@@ -34,6 +34,12 @@ module.config(($stateProvider)=>{
             }, reject);
           });
         }
+      },
+      onEnter: function($rootScope) {
+        $rootScope.bodyOverflow = 'hidden';
+      },
+      onExit: function($rootScope) {
+        $rootScope.bodyOverflow = 'auto';
       }
     });
 

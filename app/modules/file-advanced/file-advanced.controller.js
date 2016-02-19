@@ -5,8 +5,6 @@ class FileAdvancedController {
 
     let linePos = 0;
 
-    console.log('linesResponse => ', linesResponse);
-
     for(let line of linesResponse.data) {
         lines.push({
             'title': (++linePos) + 'ª Linha',

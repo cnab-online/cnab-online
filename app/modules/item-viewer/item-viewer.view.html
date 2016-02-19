@@ -15,35 +15,35 @@
           </tr>
           <tr>
             <th>Valor Recebido</th>
-            <td>{{ occurrenceAttributes.received_value }}</td>
+            <td>{{ occurrenceAttributes.received_value | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Valor do Título</th>
-            <td>{{ occurrenceAttributes.title_value }}</td>
+            <td>{{ occurrenceAttributes.title_value | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Valor Taxa Bancária</th>
-            <td>{{ occurrenceAttributes.bank_tax }}</td>
+            <td>{{ occurrenceAttributes.bank_tax | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Valor IOF</th>
-            <td>{{ occurrenceAttributes.iof_value }}</td>
+            <td>{{ occurrenceAttributes.iof_value | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Valor Desconto</th>
-            <td>{{ occurrenceAttributes.discount_value }}</td>
+            <td>{{ occurrenceAttributes.discount_value | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Valor Abatimento</th>
-            <td>{{ occurrenceAttributes.rebate_value }}</td>
+            <td>{{ occurrenceAttributes.rebate_value | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Valor Outros Créditos</th>
-            <td>{{ occurrenceAttributes.others_credits_value }}</td>
+            <td>{{ occurrenceAttributes.others_credits_value | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Valor Mora/Multa</th>
-            <td>{{ occurrenceAttributes.mulct_value }}</td>
+            <td>{{ occurrenceAttributes.mulct_value | defaultCurrency }}</td>
           </tr>
           <tr>
             <th>Nº Documento</th>
@@ -63,15 +63,15 @@
           </tr>
           <tr>
             <th>Data de Vencimento</th>
-            <td>{{ occurrenceAttributes.due_date }}</td>
+            <td>{{ occurrenceAttributes.due_date | defaultDate }}</td>
           </tr>
           <tr>
             <th>Data de Crédito</th>
-            <td>{{ occurrenceAttributes.credit_date }}</td>
+            <td>{{ occurrenceAttributes.credit_date | defaultDate }}</td>
           </tr>
           <tr>
             <th>Data de Ocorrência</th>
-            <td>{{ occurrenceAttributes.occurrence_date }}</td>
+            <td>{{ occurrenceAttributes.occurrence_date | defaultDate }}</td>
           </tr>
           <tr>
             <th>Agência Cobradora</th>
