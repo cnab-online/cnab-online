@@ -19,20 +19,20 @@
             <i class="fa fa-file"></i> {{ fileAttributes.name }}
           </div>
 
-          <div class="col-md-3 form-group">
+          <div class="col-md-4 form-group">
             <label>Banco</label><br />
             <i class="fa fa-bank"></i> {{ fileAttributes.bank_code }} - {{ fileAttributes.bank_name }}
           </div>
-          <div class="col-md-3 form-group">
+          <div class="col-md-2 form-group">
             <label>Conta</label><br />
             <i class="fa fa-credit-card"></i> {{ fileAttributes.account_number }}
           </div>
           <div class="col-md-3 form-group">
             <label>Data de Geração</label><br />
-            <i class="fa fa-calendar"></i> {{ fileAttributes.generation_date }}
+            <i class="fa fa-calendar"></i> {{ fileAttributes.generation_date | defaultDate }}
           </div>
 
-          <div class="col-md-3 form-group">
+          <div class="col-md-12 form-group">
             <label>Empresa</label><br />
             <i class="fa fa-building"></i> {{ fileAttributes.company_name }}
           </div>

@@ -33,9 +33,9 @@
       <tr ng-repeat="occurrence in occurrences">
         <td>{{ occurrence.attributes.code_name }}</td>
         <td>{{ occurrence.attributes.our_number }}</td>
-        <td>{{ occurrence.attributes.due_date }}</td>
-        <td>{{ occurrence.attributes.title_value }}</td>
-        <td>{{ occurrence.attributes.received_value }}</td>
+        <td>{{ occurrence.attributes.due_date | defaultDate }}</td>
+        <td>{{ occurrence.attributes.title_value | defaultCurrency }}</td>
+        <td>{{ occurrence.attributes.received_value | defaultCurrency }}</td>
         <td>
           <div class="pull-right">
             <a ui-sref="file.file-viewer.item-viewer({fileId: fileId, itemId: occurrence.id})" class="btn btn-primary">

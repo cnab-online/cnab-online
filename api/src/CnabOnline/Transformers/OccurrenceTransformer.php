@@ -18,7 +18,7 @@ class OccurrenceTransformer extends Fractal\TransformerAbstract
             'iof_tax' => (float)$occurrence->getValorIOF(),
             'discount_value' => (float)$occurrence->getValorDesconto(),
             'rebate_value' => (float)$occurrence->getValorAbatimento(),
-            'others_credits_value' => (float)$occurrence->getValorOutrosCreditos(),
+            'others_credits_value' => (float) $occurrence->getValorOutrosCreditos(),
             'mulct_value' => (float)$occurrence->getValorMoraMulta(),
             'document_number' => $occurrence->getNumeroDocumento(),
             'wallet' => $occurrence->getCarteira(),

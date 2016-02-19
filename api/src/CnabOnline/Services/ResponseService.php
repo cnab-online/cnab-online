@@ -38,7 +38,9 @@ class ResponseService
             $responseContent = $app['fractal']->createData($responseContent)->toArray();
         }
 
-        return new JsonResponse($responseContent);
+        return new JsonResponse($responseContent, 200, [
+            'Cache-Control' => 'max-age=3600',
+        ]);
     }
 
     /**
