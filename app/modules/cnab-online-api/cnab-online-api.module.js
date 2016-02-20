@@ -4,6 +4,6 @@ import CnabOnlineClient from 'app/modules/cnab-online-api/cnab-online-client.ser
 angular
   .module('cnabOnlineApi', ['ngFileUpload'])
   .constant('CNAB_ONLINE_CONFIG', {
-    'BASE_URL': 'http://localhost:9292/v1'
+    'BASE_URL': 'https://cnab-online.herokuapp.com/v1'
   })
   .service('cnabOnlineClient', CnabOnlineClient);
