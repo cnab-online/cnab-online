@@ -13,6 +13,9 @@ git branch -D api-filtered
 git branch api-filtered
 git filter-branch -f --subdirectory-filter api -- api-filtered
 
+git push origin --delete client-production-filtered
+git push origin --delete api-filtered
+
 git push origin client-production-filtered
 git push origin api-filtered
 #git push origin gh-pages
