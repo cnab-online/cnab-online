@@ -18,5 +18,6 @@ git push origin --delete api-filtered
 
 git push origin client-production-filtered
 git push origin api-filtered
+git push
 #git push origin gh-pages
 #git push heroku heroku-master:master

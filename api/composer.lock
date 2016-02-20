@@ -44,16 +44,16 @@
         },
         {
             "name": "andersondanilo/cnab_php",
-            "version": "1.3.10",
+            "version": "1.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersondanilo/CnabPHP.git",
-                "reference": "0a27897feac5826e6a3b05a5097e3e153b74fd0f"
+                "reference": "a5fcb8bf98d268d8b2dede0e62690b89f4a221e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersondanilo/CnabPHP/zipball/0a27897feac5826e6a3b05a5097e3e153b74fd0f",
-                "reference": "0a27897feac5826e6a3b05a5097e3e153b74fd0f",
+                "url": "https://api.github.com/repos/andersondanilo/CnabPHP/zipball/a5fcb8bf98d268d8b2dede0e62690b89f4a221e7",
+                "reference": "a5fcb8bf98d268d8b2dede0e62690b89f4a221e7",
                 "shasum": ""
             },
             "require": {
@@ -85,7 +85,7 @@
                 "remessa",
                 "retorno"
             ],
-            "time": "2015-10-11 12:52:20"
+            "time": "2016-02-09 14:47:08"
         },
         {
             "name": "andersondanilo/cnab_yaml",
