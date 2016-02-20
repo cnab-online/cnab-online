@@ -1,0 +1,27 @@
+/**
+ * Lavel-up | Responsive coming soon template
+ * By WPBean
+ */
+
+
+
+ /* ==========================================================================
+    Lovelo Black font
+    ========================================================================== */
+
+@font-face {
+    font-family: 'loveloblack';
+    src: url('lovelo/lovelo_black.eot');
+    src: url('lovelo/lovelo_black.eot?#iefix') format('embedded-opentype'),
+         url('lovelo/lovelo_black.woff') format('woff'),
+         url('lovelo/lovelo_black.ttf') format('truetype'),
+         url('lovelo/lovelo_black.svg#loveloblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+   Open sans
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
