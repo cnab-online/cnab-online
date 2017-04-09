@@ -18,6 +18,9 @@
             "post": {
                 "summary": "Faz o upload de um arquivo",
                 "description": "Processa um arquivo CNAB para obter informações sobre o mesmo. Retorna um ID temporário para o mesmo.\n",
+                "consumes": [
+                    "multipart/form-data"
+                ],
                 "parameters": [
                     {
                         "name": "file",
